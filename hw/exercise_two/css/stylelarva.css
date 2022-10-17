@@ -1,0 +1,90 @@
+/* a css comment in css */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ /* adding border or padding had no effect on size */
+}
+
+body {
+  background-color: #72BF3B;
+  font-family: gotham, helvetica, verdana, sans-serif;
+  font-size: 20px;
+  /* overscroll-behaviour */
+}
+
+header {
+  background-color: #91CF6B;
+  color: #eee;
+  padding: 20px;
+  /* or 1em */
+  margin-bottom: 20px;
+  /* or 1em */
+  border-bottom: 10px solid #eee;
+  /* or .5em */
+  text-align: center;
+}
+
+h1 {
+  font-size: 4em;
+  /* or 4vmax (maximum)  or 4vmin (minimum) for responsive type */
+  text-transform: capitalize;
+  font-family: georgia, serif;
+}
+/* be more specific */
+header h2 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 1em;
+  text-transform: capitalize;
+}
+
+article {
+  max-width:1000px;
+  width:100%;
+  /* old method for horizontal center */
+  margin: 0 auto;
+  /* border: solid 1px red; */
+}
+
+article h2 {
+  font-size: 2em;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: .25em;
+}
+
+figure {
+  margin-bottom: 1em;
+}
+
+figcaption {
+  text-align: center;
+  font-family: georgia, serif;
+  font-style: italic;
+}
+
+/* responsive image */
+figure img {
+  width: 100%;
+}
+
+p {
+  margin-bottom: 1em;
+  line-height: 1.25em;
+}
+
+footer {
+  background-color: #333;
+  color: #eee;
+  padding: 20px;
+  border-top: .5em solid #eee;
+  /* or .5em */
+  text-align: center;
+  text-transform: capitalize;
+}

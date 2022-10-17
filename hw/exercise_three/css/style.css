@@ -1,0 +1,171 @@
+/* this is a comment */
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  /* when padding and border are added it has no effect on w and H */
+}
+
+body {
+  font-family: Gotham, helvetica, verdana, sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+}
+/* ids start with hashtag and can only be used once per page */
+#larva {
+  background-color: #72BF3B
+}
+#pupa {
+  background-color: #84C1D9
+}
+#egg {
+  background-color: #9CBF50
+}
+#butterfly {
+  background-color: #92A68F
+}
+
+header {
+  background-color: #333;
+  color:#eee;
+  /* margin-bottom: 1em; */
+  padding: 1em;
+  text-align: center;
+  /* border-bottom: solid 1em #eee; */
+}
+
+h1 {
+  font-size: 4em;
+  font-family: georgia, times, serif;
+  text-transform: capitalize;
+  font-weight: lighter;
+}
+/* be more specific */
+header h2 {
+  text-transform: capitalize;
+  letter-spacing: .15em;
+  font-weight: lighter;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 1em;
+  background: #eee
+}
+
+/* specificity a tags in the nav tags */
+/* this is a pseudo class */
+/* has to be in this order LVHA */
+nav a:link {
+  background: #eee;
+  color: #333;
+  padding: .5em 1em;
+  display: inline-block;
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: #555;
+}
+
+nav a:hover {
+  background: #eee;
+  color: #F29F05;
+}
+
+nav a:active {
+  color: #98A62E;
+}
+
+nav a.current {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+article {
+  max-width: 1000px;
+  width:100%;
+  /* center horizontal old school method */
+  margin: 0 auto;
+}
+
+.col2 {
+  column-count: 2;
+  /* column-rule: solid 1px #777 */
+  column-gap: 2em;
+}
+.col2 h2 {
+  text-align: left;
+  column-span: all;
+}
+
+article h2 {
+  text-align: left;
+  text-transform: inherit;
+  margin-bottom: .5em;
+  font-weight: lighter;
+}
+figure {
+  margin-bottom: 1em;
+}
+
+figure img {
+  width:100%;
+}
+
+p {
+  margin-bottom: 1em;
+  line-height: 1.3em;
+}
+/* classes start with a . and can be used many times on a page */
+p.pull_quote{
+  border-left: solid 1em #333;
+  padding: 1em;
+  margin: 0 2em .5em;
+  font-size: 2em;
+  font-family: georgia, times, serif;
+  font-style: italic;
+  background: url(../images/butterfly2.jpg) fixed;
+}
+
+p.pull_quote::before {
+  content: '“';
+}
+
+p.pull_quote::after {
+  content: '”';
+}
+
+article a:link {
+  color: #fff;
+}
+
+article a:visited {
+  color: #eee;
+}
+
+article a:hover {
+  color: #eee
+}
+
+section.divider {
+  background: url(../images/spring.jpg) fixed no-repeat;
+  background-size: cover;
+  padding: 3em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+  section.divider h1 {
+    color: #eee;
+    font-family: Gotham, helvetica, verdana, sans-serif;
+    text-shadow: 4px 4px 0 #333
+  }
+
+footer {
+  background-color: #333;
+  color:#eee;
+  padding: 1em;
+  text-align: center;
+  border-top: solid .5em #eee;
+}

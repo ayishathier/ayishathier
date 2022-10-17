@@ -1,0 +1,92 @@
+ * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* default font */
+body {
+  font-family: 'Libre Franklin';
+}
+
+header {
+  position: fixed;
+  color: #555;
+  font-family: 'DM Serif Display';
+  font-size: 3.5vmax;
+  font-weight: 100;
+  margin: 1em;
+  margin-bottom: 1em
+  text-transform: lowercase;
+
+
+}
+
+.container {
+  padding: 10px 10%;
+}
+
+nav {
+
+  text-align: right;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  margin-top: 2em
+
+}
+
+
+/* specificity a tags in the nav tags */
+/* this is a pseudo class */
+/* has to be in this order LVHA */
+nav a:link {
+  color: #7DD952;
+  padding: .5em 1em;
+  display: inline-block;
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: #555;
+}
+
+nav a:hover {
+  /* background: #eee; */
+  color: #7DD952;
+}
+
+nav a:active {
+  color: #98A62E;
+}
+
+nav a.current {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+article {
+  max-width: 100%;
+  width:100%;
+  word-spacing: 7px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  white-space: normal;
+  /* center horizontal old school method */
+  margin: 0 auto;
+  font-family: 'libre Franklin';
+  width: 100%;
+
+  padding: 1.5em;
+  margin-top: 10em;
+  margin-left: 1.5em;
+
+
+}
+
+  .image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5em;
+  width: 50%;
+}
