@@ -1,0 +1,174 @@
+
+/* Google Fonts - EB Garamond */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap');
+
+
+/* Container for the header */
+.header-container {
+    position: relative; /* Necessary for absolute positioning of nav bars */
+    min-height: 100vh; /* Ensure the container takes up the full height of the viewport */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-between; /* Align items vertically */
+    z-index: 1;
+}
+
+/* Header section */
+.header-start {
+    margin-bottom: 20px; /* Add some space between main content and nav bars */
+    position: fixed;
+    z-index: 2;
+}
+
+/* Navigation links container */
+/* Navigation links container */
+.header-start a {
+    display: inline; /* Ensure each link takes up the full width */
+    font-family: "EB Garamond"; /* Use EB Garamond font */
+    font-size: 22px;
+    text-decoration: none;
+    color: #000000;
+    transition: transform 0.3, filter 0.3s; /* Add transition for smoother hover effect */
+}
+
+/* Hover effect - Blur */
+.header-start a:hover {
+    transform: scale(1.1); 
+    filter: blur(2px); /* Adjust the blur radius as needed */
+}
+
+/* Bottom left navigation */
+.bottom-left-nav {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+
+.bottom-left-nav a {
+    font-family: "EB Garamond"; /* Correct font family name */
+    text-decoration: none;
+    color: #000000;
+    margin-right: 10px; /* Add some space between links */
+    font-size: 20px;
+}
+
+/* Bottom right navigation */
+.bottom-right-nav {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Bottom right navigation */
+.bottom-right-nav a {
+    font-family: "EB Garamond"; /* Correct font family name */
+    text-decoration: none;
+    color: #000000;
+    margin-left: 10px; /* Add some space between links */
+    font-size: 22px;
+}
+
+/* Bottom left navigation - About */
+.bottom-left-nav a,
+.bottom-right-nav a {
+    font-family: "EB Garamond"; /* Use EB Garamond font */
+    text-decoration: none;
+    color: #000000;
+    margin-right: 10px; /* Add some space between links */
+    font-size: 22px;
+    transition: filter 0.2s; /* Add transition for smoother hover effect */
+}
+
+/* Hover effect - Blur */
+.bottom-left-nav a:hover,
+.bottom-right-nav a:hover {
+    filter: blur(3px); /* Adjust the blur radius as needed */
+}
+
+
+/* Centered image */
+.centered-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure the image takes up the full height of the viewport */
+}
+
+.centered-image img {
+    width:100%
+}
+
+/* Centered image */
+.centered-image {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align items at the start (top) of the container */
+    /* height: 65vh;  */
+    width: 500px;
+
+    pointer-events: none;
+
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.content {
+    font-family: "EB Garamond", serif;
+    font-size: 22px;
+    max-width: 65%; /* Set the width to 50% of the screen */
+    margin-top: 160px; /* Adjust the top margin to move the text downwards */
+    display: flex; 
+}
+
+.contact {
+    max-width: 20%;
+    margin-left: 50px; 
+    white-space: nowrap;
+}
+
+.contact a {
+    color: inherit; /* Inherit the color from the parent */
+    text-decoration: none; /* Remove default underline */
+    transition: filter 0.3s; /* Add transition for smoother hover effect */
+}
+
+.contact a:hover {
+    filter: blur(2px); /* Adjust the blur radius as needed */
+}
+
+.larger-image{
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align items at the start (top) of the container */
+    /* height: 65vh;  */
+    width: 1000px;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%; /* Set the maximum width to 100% */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.second-gif {
+    margin-top: 700px; /* Adjust this value as needed to create space between the two GIFs */
+}
+
+
+.gif-caption {
+    font-family: "EB Garamond", serif;
+    font-size: 22px;
+    /* max-width: 65%; */
+    margin-top: 800px;
+    display: flex;
+    flex-direction: wrap;
+}
+
+
+/* Additional styles for text inside gif-caption if needed */
